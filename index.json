@@ -1,0 +1,60 @@
+{
+  "drop_with_single": {
+    "text": "Drop columns with single values",
+    "function": "df__cols__drop_with_single",
+    "command": "cols.drop_with_single",
+    "preview": false,
+    "dialog": "small",
+    "columns": true
+  },
+  "oversample": {
+    "text": "Oversample rows",
+    "function": "df__rows__oversample",
+    "command": "rows.oversample",
+    "preview": "dataset",
+    "columns": false,
+    "parameters": {
+      "features_names": {
+        "label": "Feature columns",
+        "type": "columns"
+      },
+      "label_name": {
+        "label": "Label columns",
+        "type": "columns"
+      },
+      "technique": {
+        "label": "Technique",
+        "type": "string",
+        "value": "random",
+        "items": {
+          "random": "Random sampling",
+          "smote": "SMOTE",
+          "adasyn": "ADASYN"
+        }
+      }
+    }
+  },
+  "knn_impute": {
+    "text": "Impute (KNN)",
+    "function": "df__cols__knn_impute",
+    "command": "cols.knn_impute",
+    "preview": "late",
+    "columns": true,
+    "parameters": {
+      "n_neighbors": {
+        "label": "Neighbors",
+        "type": "int",
+        "value": 5
+      },
+      "weights": {
+        "label": "Weights",
+        "type": "string",
+        "value": "uniform",
+        "items": {
+          "uniform": "Uniform",
+          "distance": "Distance"
+        }
+      }
+    }
+  }
+}
