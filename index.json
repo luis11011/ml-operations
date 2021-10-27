@@ -5,7 +5,8 @@
     "command": "cols.drop_with_single",
     "preview": false,
     "dialog": "small",
-    "columns": true
+    "columns": true,
+    "path": "TRANSFORMATIONS/ML"
   },
   "oversample": {
     "text": "Oversample rows",
@@ -13,6 +14,7 @@
     "command": "rows.oversample",
     "preview": "dataset",
     "columns": false,
+    "path": "TRANSFORMATIONS/ML",
     "parameters": {
       "features_names": {
         "label": "Feature columns",
@@ -40,6 +42,7 @@
     "command": "cols.knn_impute",
     "preview": "late",
     "columns": true,
+    "path": "TRANSFORMATIONS/ML",
     "parameters": {
       "n_neighbors": {
         "label": "Neighbors",
